@@ -1,0 +1,112 @@
+#topnav {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.float-left {
+    float: left;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media only screen and (max-width: 680px) {
+    /* Hide liks except home*/
+    #topnav-links a:not(#home) {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /**/
+    #topnav.active {
+        height: 100vh;
+    }
+
+    #topnav.active a:not(#home) {
+        display: block;
+        font-size: 36px;
+    }
+
+    #topnav.active #inner-links {
+        display: block;
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-top: 50%;
+    }
+
+    #topnav.active #inner-links a:hover {
+        border-top-right-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+    }
+
+    #inner-links {
+        position: absolute;
+        max-width: 300px;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+
+    #topnav.active #inner-links {
+        transform: rotate(180deg);
+    }
+
+    #topnav.active #inner-links > li {
+        transform: rotate(-180deg);
+    }
+
+    /**/
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 13px;
+        margin-right: 20px;
+    }
+      
+    .menu-icon-bar1, .menu-icon-bar2, .menu-icon-bar3 {
+        width: 17.5px;
+        height: 2.5px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+    
+    .change .menu-icon-bar1 {
+        transform: translate(0, 6.5px) rotate(-45deg);
+    }
+    
+    .change .menu-icon-bar2 {opacity: 0;}
+    
+    .change .menu-icon-bar3 {
+        transform: translate(0, -6.5px) rotate(45deg);
+    }
+}

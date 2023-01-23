@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/partials/topnav/topnav.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="topnav" class="topnav">
+
+        <ul id="topnav-links" class="topnav-links">
+            <li class="float-left"><a id="home" href="/index.html">Home</a></li>
+            <li>
+                <div class="menu-icon" onclick="toggleMenu(this)">
+                    <div class="menu-icon-bar1"></div>
+                    <div class="menu-icon-bar2"></div>
+                    <div class="menu-icon-bar3"></div>
+                  </div>
+            </li>
+            <div id="inner-links">
+                <li><a href="/pages/umfrage.html">Umfrage</a></li>
+                <li><a href="/pages/ozonschicht.html#ozonschicht-bedroht">Bedroht</a></li>
+                <li><a href="/pages/ozonschicht.html#ozonschicht-lebenswichtig">Lebenswichtig</a></li>
+                <li><a href="/pages/ozonschicht.html#ozonschicht-schutzschild">Schutzschild</a></li>
+                <li><a href="/pages/ozonschicht.html">Ozonschicht</a></li>
+            </div>
+            
+        </ul>
+    </div>
+</body>
+
+<script>
+    function toggleMenu(x) {
+        x.classList.toggle("change")
+
+        var menu = document.getElementById("topnav");
+        menu.classList.toggle("active");
+    }
+</script>
+</html>

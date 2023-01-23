@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding-top: 5vh;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+/* topnav */
+
+#topnav-placeholder {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10vh;
+    z-index: 1;
+} 
+
+/* Scroll Images */
+
+.scroll-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -2vh;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-text-centered {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Images (Sources) */
+
+#image-earth {
+    background-image: url(/assets/The_Blue_Marble.jpg);
+}
+
+#image-umfrage {
+    background-image: url(/assets/umfrage.jpg);
+}
+
+#image-neues_leben {
+    background-image: url(/assets/neues_leben.jpg);
+}
+
+#image-schutzschild {
+    background-image: url(/assets/erde-schutzschild.png);
+}
+
+#image-ozonloch {
+    background-image: url(/assets/ozonloch_2006.png);
+}
+
+/* MISC */
+
+#big-whitespace {
+    background-color: aqua;
+    height: 1000vh;
+}

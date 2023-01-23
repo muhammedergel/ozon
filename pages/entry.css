@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding-top: 2.5vh;
+    color: aquamarine;
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 10vh;
+}
+
+body {
+    background-image: url(/assets/The_Blue_Marble.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#page-content-wrapper {
+    backdrop-filter: blur(20px);
+    min-height: 100vh;
+}
+
+
+#page-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#topnav-placeholder {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10vh;
+    z-index: 1;
+}
+
+video {
+    width: 70%;
+}
+
+/* MISC */
+
+#big-whitespace {
+    background-color: aqua;
+    height: 1000vh;
+}
+
+@media only screen and (max-width: 680px) {
+    video {
+        width: 85%;
+    }
+}
