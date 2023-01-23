@@ -55,6 +55,10 @@ video {
     height: 1000vh;
 }
 
+.highlight-correct {
+    background-color: green;
+}
+
 @media only screen and (max-width: 680px) {
     video {
         width: 85%;
