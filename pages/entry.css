@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding-top: 2.5vh;
     color: white;
+    font-size: 24px;
+}
+
+#topnav-placeholder {
     font-size: 18px;
 }
 
@@ -60,6 +64,10 @@ video {
 }
 
 @media only screen and (max-width: 680px) {
+    body {
+        font-size: 18px;
+    }
+    
     video {
         width: 85%;
     }
