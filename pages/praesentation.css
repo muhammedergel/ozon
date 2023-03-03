@@ -7,6 +7,11 @@ body {
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+    color: #83E22B;
+}
+
 #topnav-placeholder {
     font-size: 18px;
 }
@@ -243,7 +248,7 @@ td {
 }
 
 /* */
-#retrospective-visualisation::after {
+#retrospective-visualisation::after, #retrospective-references::after {
     content: '\2713';
     display: inline-block;
     color: greenyellow;
