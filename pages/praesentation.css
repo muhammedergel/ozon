@@ -114,7 +114,7 @@ body {
 .slide > li {
     float: left;
     margin-left: 1.5em;
-    margin-bottom: 1.5em;
+    width: fit-content;
 }
 
 .slide > li:hover {
@@ -137,6 +137,118 @@ body {
 .slide-umfrage {
     text-align: center;
 }
+
+/***** SURVEY VISUALISATION *****/
+
+.slide > table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+}
+
+/* doesn't recognize with .slide > td; thus 1em not exactly accurate? */
+td {
+    width: 100px;
+    height: 1em;
+    padding: 0;
+}
+
+/* Rainbow colors: red, orange, yellow, green, blue, indigo, violet*/
+
+/* [1] */
+#survey-age-17 {
+    background-color: red;
+    width: 50%;
+}
+
+#survey-age-18 {
+    background-color: orange;
+    width: 50%;
+}
+
+/* [2] */
+#survey-ozon-02 {
+    background-color: red;
+    width: 33.3%;
+}
+
+#survey-ozon-03 {
+    background-color: orange;
+    width: 66.6%;
+}
+
+/* [4] */
+#survey-bildung-plus {
+    background-color: red;
+    width: 16.6%;
+}
+
+#survey-bildung-mid {
+    background-color: orange;
+    width: 33.3%;
+}
+
+#survey-bildung-minusminus {
+    background-color: yellow;
+    width: 50%;
+}
+
+/* [8] */
+#survey-height-10to25 {
+    background-color: red;
+    width: 40%;
+}
+
+#survey-height-15to30 {
+    background-color: orange;
+    width: 40%;
+}
+
+#survey-height-20to35 {
+    background-color: yellow;
+    width: 20%;
+}
+
+/* [9] */
+#survey-emissions-600to700TT {
+    background-color: red;
+    width: 20%;
+}
+
+#survey-emissions-500to600MioT {
+    background-color: orange;
+    width: 20%;
+}
+
+#survey-emissions-700to800MioT {
+    background-color: yellow;
+    width: 40%;
+}
+
+#survey-emissions-700to800MrdT {
+    background-color: green;
+    width: 20%;
+}
+
+/* [11] */
+#survey-rescue-yes {
+    background-color: red;
+    width: 80%;
+}
+
+#survey-rescue-no {
+    background-color: orange;
+    width: 20%;
+}
+
+/* */
+#retrospective-visualisation::after {
+    content: '\2713';
+    display: inline-block;
+    color: greenyellow;
+    padding: 0 6px 0 0;
+  }
 
 @media only screen and (max-width: 680px) {
 
