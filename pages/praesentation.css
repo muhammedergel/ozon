@@ -114,6 +114,7 @@ body {
 .slide > li {
     float: left;
     margin-left: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .slide > li:hover {
@@ -131,6 +132,10 @@ body {
 
 .slide > p > .highlight-correct {
     background-color: green;
+}
+
+.slide-umfrage {
+    text-align: center;
 }
 
 @media only screen and (max-width: 680px) {
